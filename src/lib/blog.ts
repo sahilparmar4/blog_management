@@ -1,31 +1,33 @@
 import { coverPhoto, DanielleMarshAvatar, KangHaerinAvatar, MirandaRachelAvatar, recommendedBlogImage1 } from "@/components/image";
-import { blogType, recommendedArticleType } from "./types";
+import { blogType, commentType, recommendedArticleType, relatedArticleType } from "./types";
 
 export const blogData: blogType = {
         id: "blog1",
         title: "The Ultimate Guide to Full-Body Workouts",
         date: "23/01/2025",
-        description: `Discover exercises that target every muscle group, helping you build strength and endurance. Perfect for beginners and seasoned gym-goers alike.
+        description: `
         
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus 
-       
-        mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-       
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus 
-
-        With over a decade of experience in the fitness industry, Alex specializes in strength training and functional fitness. Certified by NASM and known for his motivational style, Alex designs workout programs that are both challenging and achievable. His passion lies in helping clients build strength and confidence through personalized training routines. Outside the gym, Alex is an avid runner and enjoys outdoor adventures.
-
-        With over a decade of experience in the fitness industry, Alex specializes in strength training and functional fitness. Certified by NASM and known for his motivational style, Alex designs workout programs that are both challenging and achievable. His passion lies in helping clients build strength and confidence through personalized training routines. Outside the gym, Alex is an avid runner and enjoys outdoor adventures.
-
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus 
-       
-        mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-       
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus 
+        <p>Discover exercises that target every muscle group, helping you build strength and endurance. Perfect for beginners and seasoned gym-goers alike</p>.
         
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus 
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus</p>
+       
+        <p>mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.<p>
+       
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus</p>
+
+        <blockquote>With over a decade of experience in the fitness industry, Alex specializes in strength training and functional fitness. Certified by NASM and known for his motivational style, Alex designs workout programs that are both challenging and achievable. His passion lies in helping clients build strength and confidence through personalized training routines. Outside the gym, Alex is an avid runner and enjoys outdoor adventures.</blockquote>
+
+        <p>With over a decade of experience in the fitness industry, Alex specializes in strength training and functional fitness. Certified by NASM and known for his motivational style, Alex designs workout programs that are both challenging and achievable. His passion lies in helping clients build strength and confidence through personalized training routines. Outside the gym, Alex is an avid runner and enjoys outdoor adventures.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus </p>
+       
+        <p>mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+       
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus </p>
         
-        mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus </p>
+        
+        <p>mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean</p>
         `,
         author: "Alex Carter",
         image: coverPhoto,
@@ -38,14 +40,14 @@ export const blogData: blogType = {
                 rating: 5,
             },
             {
-                id: "comment1",
+                id: "comment2",
                 date: "22/07/2022",
                 authorName: "Kang Haerin",
                 comment: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus",
                 rating: 5,
             }
         ]
-    }
+}
 
 
 export const recommendedArticles: recommendedArticleType[] = [
@@ -78,20 +80,47 @@ export const tourGuides = [
         name: "Miranda Rachel",
         profilePhoto: MirandaRachelAvatar,
         location: "Jombang, Jawa timur",
-        rating: 4
+        rating: 4.0
     },
     {
         id: "tourGuide2",
         name: "Danielle Marsh",
         profilePhoto: DanielleMarshAvatar,
         location: "Wonosobo, Jawa ten...",
-        rating: 4
+        rating: 4.0
     },
     {
         id: "tourGuide3",
         name: "Kang Haerin",
         profilePhoto: KangHaerinAvatar,
         location: "Bundung, Jawa brat",
-        rating: 4
+        rating: 5.0
     }
+]
+
+export const relatedArticles: relatedArticleType[] = [
+    {
+        id: "relatedArticles1",
+        title: "The Ultimate Guide to Full-Body Workouts",
+        description: "Discover exercises that target every muscle group, helping you build strength and endurance. Perfect for beginners and seasoned gym-goers alike.",
+        author: "Alex Carter"
+    },
+    {
+        id: "relatedArticles2",
+        title: "5 Tips for Better Cardio Sessions",
+        description: "Improve your cardio performance with these simple yet effective techniques to maximize stamina and get the most from each workout.",
+        author: "Maya Lee"
+    },
+    {
+        id: "relatedArticles3",
+        title: "Meal Prep Basics for Gym Enthusiasts",
+        description: "Fuel your workouts with balanced, easy-to-prepare meals. A guide on planning, prepping, and staying consistent with nutrition.",
+        author: "Jordan Smith"
+    },
+    {
+        id: "relatedArticles4",
+        title: "Building Core Strength: Exercises and Benefits",
+        description: "A strong core is essential for stability and injury prevention. Learn the best exercises to enhance your core power.",
+        author: "Emma Rodriguez"
+    },
 ]

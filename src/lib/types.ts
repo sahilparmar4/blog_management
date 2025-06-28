@@ -31,3 +31,16 @@ export interface tourGuideType {
     location: string,
     rating: number
 }
+
+export interface responseDataType {
+    status: number,
+    message: string,
+    data: any
+}
+
+export interface relatedArticleType {
+    id: string,
+    title: string,
+    description: string,
+    author: string
+}

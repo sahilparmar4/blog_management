@@ -21,6 +21,9 @@ import loveWhiteIcon from "@/assets/icons/loveWhite.svg"
 import goodWhiteIcon from "@/assets/icons/goodWhite.svg"
 import commentIcon from "@/assets/icons/comment.svg"
 import sendIcon from "@/assets/icons/message.svg"
+import relatedArticle2 from "@/assets/images/footsteps.png"
+import relatedArticle3 from "@/assets/images/diet.jpg"
+import relatedArticle4 from "@/assets/images/exercise.png"
 
 export {
     coverPhoto,
@@ -45,5 +48,8 @@ export {
     goodIcon,
     goodWhiteIcon,
     commentIcon,
-    sendIcon
+    sendIcon,
+    relatedArticle2,
+    relatedArticle3,
+    relatedArticle4
 }
