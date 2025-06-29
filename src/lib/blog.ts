@@ -124,3 +124,22 @@ export const relatedArticles: relatedArticleType[] = [
         author: "Emma Rodriguez"
     },
 ]
+
+export const carouselData = [
+  {
+    id: "1",
+    author: "Alex Carter",
+    description:
+      "With over a decade of experience in the fitness industry, Alex specializes in strength training and functional fitness. Certified by NASM and known for his motivational style, Alex designs workout programs that are both challenging and achievable. His passion lies in helping clients build strength and confidence through personalized training routines. Outside the gym, Alex is an avid runner and enjoys outdoor adventures.",
+    prevTitle: "5 Tips for Better Cardio Sessions",
+    nextTitle: "Meal Prep Basics for Gym Enthusiasts",
+  },
+  {
+    id: "2",
+   author: "Miranda Rachel",
+    description:
+      "With over a decade of experience in the fitness industry, Alex specializes in strength training and functional fitness. Certified by NASM and known for his motivational style, Alex designs workout programs that are both challenging and achievable. His passion lies in helping clients build strength and confidence through personalized training routines. Outside the gym, Alex is an avid runner and enjoys outdoor adventures.",
+    prevTitle: "5 Tips for Better Cardio Sessions",
+    nextTitle: "Meal Prep Basics for Gym Enthusiasts",
+  },
+];

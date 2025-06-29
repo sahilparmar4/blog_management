@@ -9,16 +9,16 @@ const Header:React.FC<HeaderProps> = ({title}) => {
     <>
       <header>
         <nav>
-            <ul>
-                <li style={{fontWeight: "bold"}}>
+            <ul style={{color:"#262D4D"}}>
+                <li style={{fontWeight: "bold", color:"#262D4D"}}>
                     HOME
                 </li> /
-                <li>
+                <li style={{color:"#262D4D"}}>
                     ARTICLES
                 </li>
             </ul>
         </nav>
-        <h1 style={{display:"flex", justifyContent:"center", alignItems:"center", fontWeight: 600}}>{title}</h1>
+        <h1 style={{display:"flex", justifyContent:"center", alignItems:"center", fontWeight: 600, textAlign:"center"}}>{title}</h1>
       </header>
     </>
   )

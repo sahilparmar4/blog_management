@@ -7,7 +7,7 @@ import { DanielleMarshAvatar, KangHaerinAvatar, locationIcon, MirandaRachelAvata
 const TourGuides = () => {
     const [tourGuidesData, setTourGuidesData] = useState<tourGuideType[]>([])
     const fetchTourGuidesData = async ()=>{
-        const result = await fetch("http://localhost:3000/api/tour-guides")
+        const result = await fetch("/api/tour-guides")
         const data: responseDataType = await result.json()
         setTourGuidesData(data?.data)
     }
@@ -19,7 +19,7 @@ const TourGuides = () => {
   return (
     <>
       <div style={{paddingLeft:"8px", paddingRight: "8px", marginTop: "40px"}}>
-        <h1 style={{fontSize: "20px", textWrap: "nowrap", textAlign:"left", fontWeight: 600}}>Tour guides</h1>
+        <h1 style={{fontSize: "20px", textWrap: "nowrap", textAlign:"left", fontWeight: 600, color:"#10152E"}}>Tour guides</h1>
         {
             tourGuidesData?.map((item: tourGuideType, index: number)=>{
                 return(

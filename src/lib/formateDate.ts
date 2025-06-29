@@ -1,6 +1,12 @@
 export function formatDate(dateString: string) {
-  const [day, month, year] = dateString.split("/"); 
-  const date = new Date(`${year}-${month}-${day}`);
+  let date: Date;
+
+  if (dateString.includes("/") && dateString.split("/").length === 3) {
+    const [day, month, year] = dateString.split("/");
+    date = new Date(`${year}-${month}-${day}`);
+  } else {
+    date = new Date(dateString);
+  }
 
   const options: Intl.DateTimeFormatOptions = {
     day: "2-digit",
